@@ -8,10 +8,30 @@
 
 <item itemtype="Ground" CircId="Ground-13" mainComp="false" Show_id="false" Show_Val="false" Pos="1024,568" rotation="0" hflip="1" vflip="1" label="Ground-13" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
+<item itemtype="Switch" CircId="Switch-15" mainComp="false" Show_id="false" Show_Val="false" Pos="708,444" rotation="-270" hflip="1" vflip="1" label="Switch-15" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" DT="false" Poles="1 _Poles" Key="A" />
+
+<item itemtype="Ground" CircId="Ground-16" mainComp="false" Show_id="false" Show_Val="false" Pos="708,544" rotation="0" hflip="1" vflip="1" label="Ground-16" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Resistor" CircId="Resistor-17" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="712,500" rotation="-270" hflip="1" vflip="1" label="Resistor-17" idLabPos="-16,-24" labelrot="0" valLabPos="-16,6" valLabRot="0" Resistance="100 Ω" />
+
+<item itemtype="Rail" CircId="Rail-18" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="664,420" rotation="0" hflip="1" vflip="1" label="Rail-18" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="Node" CircId="Node-26" mainComp="false" Pos="708,472" />
+
 <item itemtype="Connector" uid="Connector-11" startpinid="m328 TQFP-1-PORTB5" endpinid="Led-10-lPin" pointList="880,528,904,528,904,532" />
 
 <item itemtype="Connector" uid="Connector-12" startpinid="Led-10-rPin" endpinid="Resistor-2-lPin" pointList="936,532,984,532,984,536" />
 
 <item itemtype="Connector" uid="Connector-14" startpinid="Resistor-2-rPin" endpinid="Ground-13-Gnd" pointList="1016,536,1024,536,1024,552" />
+
+<item itemtype="Connector" uid="Connector-23" startpinid="Rail-18-outnod" endpinid="Switch-15-pinP0" pointList="680,420,708,420,708,428" />
+
+<item itemtype="Connector" uid="Connector-24" startpinid="Switch-15-switch0pinN" endpinid="Node-26-0" pointList="708,460,708,472" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Resistor-17-lPin" endpinid="Node-26-1" pointList="712,484,712,472,708,472" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Node-26-2" endpinid="m328 TQFP-1-PORTD3" pointList="708,472,776,472" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="Resistor-17-rPin" endpinid="Ground-16-Gnd" pointList="712,516,712,528,708,528" />
 
 </circuit>
