@@ -15,14 +15,21 @@
 
 ISR(INT0_vect){ //Função no vetor de interrupção INT0
 	PORTB |=(1<<PORTB1); //Acende led em PB1
+	_delay_ms(50);
+	PORTB &= ~(1<<PORTB1); //Apaga led em PB1. ~inverte e & limpa o 0 da mascara
+}
+
+ISR(INT1_vect){ //Função no vetor de interrupção INT1
+	PORTB |=(1<<PORTB1); //Acende led em PB1
 	_delay_ms(100);
 	PORTB &= ~(1<<PORTB1); //Apaga led em PB1. ~inverte e & limpa o 0 da mascara
 }
 
 void INT_config(){
 	//São as 3 configurações necessarias para habilitar o interrupt
-	EICRA = (0<<ISC01)|(1<<ISC00);   //1. configura INT0 na borda de descida - modo de interrupções
-	EIMSK = (1<<INT0);  //2. Habilita INT0
+	EICRA = (1<<ISC11)|(1<<ISC10)    //1. configura INT1 na borda de subida
+		   |(1<<ISC01)|(0<<ISC00);      //1. configura INT0 na borda de descida 
+	EIMSK = (1<<INT1) | (1<<INT0);   //2. Habilita INT0 e INT1
 }
 
 void GPIO_config(){
@@ -35,7 +42,11 @@ int main(void){
 	INT_config();
 	sei(); //3. habilita interrupções globalmente
     while(1){
+		cli();		//Desabilita interrupções temporariamente
+		 PORTB |= (1<<PORTB0); //acende led no pino PB0
 		_delay_ms(100);
-        PORTB ^= (1<<PORTB0); //alterna pino PB0
+        PORTB &= ~(1<<PORTB0); //desliga pino PB0
+		sei();
+		_delay_ms(100);
     }
 }
