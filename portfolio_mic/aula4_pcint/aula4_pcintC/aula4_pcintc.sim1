@@ -1,6 +1,6 @@
 <circuit version="1.0.0-RC3" rev="1148" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
 
-<item itemtype="MCU" CircId="m328 TQFP-1" mainComp="false" Show_id="true" Show_Val="false" Pos="496,412" rotation="0" hflip="1" vflip="1" label="m328 TQFP-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
+<item itemtype="MCU" CircId="m328 TQFP-1" mainComp="false" Show_id="true" Show_Val="false" Pos="496,412" rotation="0" hflip="1" vflip="1" label="m328 TQFP-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Frequency="16 MHz" Program="../Debug/aula4_pcint.hex" Auto_Load="false" Rst_enabled="false" Ext_Osc="false" Wdt_enabled="false" />
 
 <item itemtype="Push" CircId="Push-2" mainComp="false" Show_id="false" Show_Val="false" Pos="584,568" rotation="90" hflip="1" vflip="1" label="Push-2" idLabPos="-12,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Norm_Close="false" Poles="1 _Poles" Key="s" />
 
@@ -12,11 +12,11 @@
 
 <item itemtype="Ground" CircId="Ground-21" mainComp="false" Show_id="false" Show_Val="false" Pos="548,636" rotation="0" hflip="1" vflip="1" label="Ground-21" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="LedBar" CircId="LedBar-25" mainComp="false" Show_id="false" Show_Val="false" Pos="408,452" rotation="0" hflip="1" vflip="1" label="LedBar-25" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="8 _Leds" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
+<item itemtype="LedBar" CircId="LedBar-25" mainComp="false" Show_id="false" Show_Val="false" Pos="408,452" rotation="-180" hflip="1" vflip="1" label="LedBar-25" idLabPos="-16,-44" labelrot="0" valLabPos="-16,-56" valLabRot="0" Size="8 _Leds" Color="Yellow" Grounded="false" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="0.6 Ω" />
 
 <item itemtype="Ground" CircId="Ground-35" mainComp="false" Show_id="false" Show_Val="false" Pos="332,580" rotation="0" hflip="1" vflip="1" label="Ground-35" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
-<item itemtype="Resistor" CircId="Resistor-36" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="332,536" rotation="90" hflip="1" vflip="1" label="Resistor-36" idLabPos="-16,-24" labelrot="0" valLabPos="11.7705,19.6416" valLabRot="-180" Resistance="100 Ω" />
+<item itemtype="Resistor" CircId="Resistor-36" mainComp="false" ShowProp="Resistance" Show_id="false" Show_Val="true" Pos="332,536" rotation="90" hflip="1" vflip="1" label="Resistor-36" idLabPos="-16,-24" labelrot="0" valLabPos="11,19" valLabRot="-180" Resistance="100 Ω" />
 
 <item itemtype="Ground" CircId="Ground-60" mainComp="false" Show_id="false" Show_Val="false" Pos="708,512" rotation="0" hflip="1" vflip="1" label="Ground-60" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
 
@@ -44,80 +44,80 @@
 
 <item itemtype="Node" CircId="Node-58" mainComp="false" Pos="332,484" />
 
-<item itemtype="Connector" uid="Connector-6" startpinid="m328 TQFP-1-PORTB0" endpinid="Push-4-pinP0" pointList="536,508,536,532,460,532,460,556" />
+<item itemtype="Connector" uid="connector-63" startpinid="m328 TQFP-1-PORTB0" endpinid="Push-4-pinP0" pointList="536,508,536,532,460,532,460,556" />
 
-<item itemtype="Connector" uid="Connector-7" startpinid="m328 TQFP-1-PORTB1" endpinid="Push-3-pinP0" pointList="544,508,544,540,504,540,504,556" />
+<item itemtype="Connector" uid="connector-64" startpinid="m328 TQFP-1-PORTB1" endpinid="Push-3-pinP0" pointList="544,508,544,540,504,540,504,556" />
 
-<item itemtype="Connector" uid="Connector-9" startpinid="m328 TQFP-1-PORTB2" endpinid="Push-2-pinP0" pointList="552,508,552,540,584,540,584,552" />
+<item itemtype="Connector" uid="connector-65" startpinid="m328 TQFP-1-PORTB2" endpinid="Push-2-pinP0" pointList="552,508,552,540,584,540,584,552" />
 
-<item itemtype="Connector" uid="Connector-10" startpinid="m328 TQFP-1-PORTB3" endpinid="Push-5-pinP0" pointList="560,508,560,532,628,532,628,556" />
+<item itemtype="Connector" uid="connector-66" startpinid="m328 TQFP-1-PORTB3" endpinid="Push-5-pinP0" pointList="560,508,560,532,628,532,628,556" />
 
-<item itemtype="Connector" uid="Connector-11" startpinid="Push-4-switch0pinN" endpinid="Node-16-0" pointList="460,588,460,604,504,604" />
+<item itemtype="Connector" uid="connector-67" startpinid="Push-4-switch0pinN" endpinid="Node-16-0" pointList="460,588,460,604,504,604" />
 
-<item itemtype="Connector" uid="Connector-12" startpinid="Push-2-switch0pinN" endpinid="Node-13-1" pointList="584,584,584,604" />
+<item itemtype="Connector" uid="connector-68" startpinid="Push-2-switch0pinN" endpinid="Node-13-1" pointList="584,584,584,604" />
 
-<item itemtype="Connector" uid="Connector-14" startpinid="Node-13-2" endpinid="Push-5-switch0pinN" pointList="584,604,628,604,628,588" />
+<item itemtype="Connector" uid="connector-69" startpinid="Node-13-2" endpinid="Push-5-switch0pinN" pointList="584,604,628,604,628,588" />
 
-<item itemtype="Connector" uid="Connector-15" startpinid="Push-3-switch0pinN" endpinid="Node-16-1" pointList="504,588,504,604" />
+<item itemtype="Connector" uid="connector-70" startpinid="Push-3-switch0pinN" endpinid="Node-16-1" pointList="504,588,504,604" />
 
-<item itemtype="Connector" uid="Connector-17" startpinid="Node-16-2" endpinid="Node-22-0" pointList="504,604,548,604" />
+<item itemtype="Connector" uid="connector-71" startpinid="Node-16-2" endpinid="Node-22-0" pointList="504,604,548,604" />
 
-<item itemtype="Connector" uid="Connector-23" startpinid="Node-22-2" endpinid="Node-13-0" pointList="548,604,584,604" />
+<item itemtype="Connector" uid="connector-72" startpinid="Node-22-2" endpinid="Node-13-0" pointList="548,604,584,604" />
 
-<item itemtype="Connector" uid="Connector-24" startpinid="Node-22-1" endpinid="Ground-21-Gnd" pointList="548,604,548,620" />
+<item itemtype="Connector" uid="connector-73" startpinid="Node-22-1" endpinid="Ground-21-Gnd" pointList="548,604,548,620" />
 
-<item itemtype="Connector" uid="Connector-26" startpinid="m328 TQFP-1-PORTD0" endpinid="LedBar-25-led0-pinN" pointList="528,404,528,372,432,372,432,428,424,428" />
+<item itemtype="Connector" uid="connector-74" startpinid="m328 TQFP-1-PORTD0" endpinid="LedBar-25-led0-pinN" pointList="528,404,528,372,432,372,432,476,392,476" />
 
-<item itemtype="Connector" uid="Connector-27" startpinid="m328 TQFP-1-PORTD1" endpinid="LedBar-25-led1-pinN" pointList="520,404,520,380,444,380,444,436,424,436" />
+<item itemtype="Connector" uid="connector-75" startpinid="m328 TQFP-1-PORTD1" endpinid="LedBar-25-led1-pinN" pointList="520,404,520,380,444,380,444,468,392,468" />
 
-<item itemtype="Connector" uid="Connector-28" startpinid="m328 TQFP-1-PORTD2" endpinid="LedBar-25-led2-pinN" pointList="512,404,512,392,452,392,452,444,424,444" />
+<item itemtype="Connector" uid="connector-76" startpinid="m328 TQFP-1-PORTD2" endpinid="LedBar-25-led2-pinN" pointList="512,404,512,392,452,392,452,460,392,460" />
 
-<item itemtype="Connector" uid="Connector-29" startpinid="m328 TQFP-1-PORTD3" endpinid="LedBar-25-led3-pinN" pointList="488,428,460,428,460,452,424,452" />
+<item itemtype="Connector" uid="connector-77" startpinid="m328 TQFP-1-PORTD3" endpinid="LedBar-25-led3-pinN" pointList="488,428,460,428,460,452,392,452" />
 
-<item itemtype="Connector" uid="Connector-30" startpinid="m328 TQFP-1-PORTD4" endpinid="LedBar-25-led4-pinN" pointList="488,436,468,436,468,460,424,460" />
+<item itemtype="Connector" uid="connector-78" startpinid="m328 TQFP-1-PORTD4" endpinid="LedBar-25-led4-pinN" pointList="488,436,468,436,468,444,392,444" />
 
-<item itemtype="Connector" uid="Connector-31" startpinid="m328 TQFP-1-PORTD5" endpinid="LedBar-25-led5-pinN" pointList="512,508,468,508,468,468,424,468" />
+<item itemtype="Connector" uid="connector-79" startpinid="m328 TQFP-1-PORTD5" endpinid="LedBar-25-led5-pinN" pointList="512,508,468,508,468,436,392,436" />
 
-<item itemtype="Connector" uid="Connector-32" startpinid="m328 TQFP-1-PORTD6" endpinid="LedBar-25-led6-pinN" pointList="520,508,520,516,460,516,460,476,424,476" />
+<item itemtype="Connector" uid="connector-80" startpinid="m328 TQFP-1-PORTD6" endpinid="LedBar-25-led6-pinN" pointList="520,508,520,516,460,516,460,428,392,428" />
 
-<item itemtype="Connector" uid="Connector-33" startpinid="m328 TQFP-1-PORTD7" endpinid="LedBar-25-led7-pinN" pointList="528,508,528,524,452,524,452,484,424,484" />
+<item itemtype="Connector" uid="connector-81" startpinid="m328 TQFP-1-PORTD7" endpinid="LedBar-25-led7-pinN" pointList="528,508,528,524,452,524,452,420,392,420" />
 
-<item itemtype="Connector" uid="Connector-37" startpinid="Resistor-36-rPin" endpinid="Ground-35-Gnd" pointList="332,552,332,564" />
+<item itemtype="Connector" uid="connector-82" startpinid="Resistor-36-rPin" endpinid="Ground-35-Gnd" pointList="332,552,332,564" />
 
-<item itemtype="Connector" uid="Connector-38" startpinid="Resistor-36-lPin" endpinid="Node-58-0" pointList="332,520,332,484" />
+<item itemtype="Connector" uid="connector-83" startpinid="Resistor-36-lPin" endpinid="Node-58-0" pointList="332,520,332,484" />
 
-<item itemtype="Connector" uid="Connector-39" startpinid="LedBar-25-led1-pinP" endpinid="Node-40-1" pointList="392,436,332,436" />
+<item itemtype="Connector" uid="connector-84" startpinid="LedBar-25-led1-pinP" endpinid="Node-40-1" pointList="424,468,332,468,332,436" />
 
-<item itemtype="Connector" uid="Connector-41" startpinid="Node-40-2" endpinid="LedBar-25-led0-pinP" pointList="332,436,332,428,392,428" />
+<item itemtype="Connector" uid="connector-85" startpinid="Node-40-2" endpinid="LedBar-25-led0-pinP" pointList="332,436,332,476,424,476" />
 
-<item itemtype="Connector" uid="Connector-42" startpinid="LedBar-25-led2-pinP" endpinid="Node-43-1" pointList="392,444,332,444,332,448" />
+<item itemtype="Connector" uid="connector-86" startpinid="LedBar-25-led2-pinP" endpinid="Node-43-1" pointList="424,460,332,460,332,448" />
 
-<item itemtype="Connector" uid="Connector-44" startpinid="Node-43-2" endpinid="Node-40-0" pointList="332,448,332,436" />
+<item itemtype="Connector" uid="connector-87" startpinid="Node-43-2" endpinid="Node-40-0" pointList="332,448,332,436" />
 
-<item itemtype="Connector" uid="Connector-45" startpinid="LedBar-25-led3-pinP" endpinid="Node-46-1" pointList="392,452,332,452" />
+<item itemtype="Connector" uid="connector-88" startpinid="LedBar-25-led3-pinP" endpinid="Node-46-1" pointList="424,452,332,452" />
 
-<item itemtype="Connector" uid="Connector-47" startpinid="Node-46-2" endpinid="Node-43-0" pointList="332,452,332,448" />
+<item itemtype="Connector" uid="connector-89" startpinid="Node-46-2" endpinid="Node-43-0" pointList="332,452,332,448" />
 
-<item itemtype="Connector" uid="Connector-48" startpinid="LedBar-25-led4-pinP" endpinid="Node-49-1" pointList="392,460,332,460" />
+<item itemtype="Connector" uid="connector-90" startpinid="LedBar-25-led4-pinP" endpinid="Node-49-1" pointList="424,444,332,444,332,460" />
 
-<item itemtype="Connector" uid="Connector-50" startpinid="Node-49-2" endpinid="Node-46-0" pointList="332,460,332,452" />
+<item itemtype="Connector" uid="connector-91" startpinid="Node-49-2" endpinid="Node-46-0" pointList="332,460,332,452" />
 
-<item itemtype="Connector" uid="Connector-51" startpinid="LedBar-25-led5-pinP" endpinid="Node-52-1" pointList="392,468,332,468,332,464" />
+<item itemtype="Connector" uid="connector-93" startpinid="Node-52-2" endpinid="Node-49-0" pointList="332,464,332,460" />
 
-<item itemtype="Connector" uid="Connector-53" startpinid="Node-52-2" endpinid="Node-49-0" pointList="332,464,332,460" />
+<item itemtype="Connector" uid="connector-94" startpinid="LedBar-25-led6-pinP" endpinid="Node-55-1" pointList="424,428,332,428,332,476" />
 
-<item itemtype="Connector" uid="Connector-54" startpinid="LedBar-25-led6-pinP" endpinid="Node-55-1" pointList="392,476,332,476" />
+<item itemtype="Connector" uid="connector-95" startpinid="Node-55-2" endpinid="Node-52-0" pointList="332,476,332,464" />
 
-<item itemtype="Connector" uid="Connector-56" startpinid="Node-55-2" endpinid="Node-52-0" pointList="332,476,332,464" />
+<item itemtype="Connector" uid="connector-96" startpinid="LedBar-25-led7-pinP" endpinid="Node-58-1" pointList="424,420,332,420,332,484" />
 
-<item itemtype="Connector" uid="Connector-57" startpinid="LedBar-25-led7-pinP" endpinid="Node-58-1" pointList="392,484,332,484" />
+<item itemtype="Connector" uid="connector-97" startpinid="Node-58-2" endpinid="Node-55-0" pointList="332,484,332,476" />
 
-<item itemtype="Connector" uid="Connector-59" startpinid="Node-58-2" endpinid="Node-55-0" pointList="332,484,332,476" />
+<item itemtype="Connector" uid="connector-98" startpinid="Ground-60-Gnd" endpinid="Resistor-62-rPin" pointList="708,496,708,436" />
 
-<item itemtype="Connector" uid="Connector-63" startpinid="Ground-60-Gnd" endpinid="Resistor-62-rPin" pointList="708,496,708,436" />
+<item itemtype="Connector" uid="connector-99" startpinid="Resistor-62-lPin" endpinid="Led-61-rPin" pointList="676,436,660,436" />
 
-<item itemtype="Connector" uid="Connector-64" startpinid="Resistor-62-lPin" endpinid="Led-61-rPin" pointList="676,436,660,436" />
+<item itemtype="Connector" uid="connector-100" startpinid="Led-61-lPin" endpinid="m328 TQFP-1-PORTC0" pointList="628,436,592,436" />
 
-<item itemtype="Connector" uid="Connector-65" startpinid="Led-61-lPin" endpinid="m328 TQFP-1-PORTC0" pointList="628,436,592,436" />
+<item itemtype="Connector" uid="connector-92" startpinid="LedBar-25-led5-pinP" endpinid="Node-52-1" pointList="424,436,332,436,332,464" />
 
 </circuit>
