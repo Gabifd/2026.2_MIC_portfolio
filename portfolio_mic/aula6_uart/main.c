@@ -43,8 +43,9 @@ void UART_send_string(char * pString) {
 	UART_send_byte(*tMessagePtr);	// * e Ptr desreferencia(pega a primeira letra dela)
 	while(*tMessagePtr != 0){
 	tMessagePtr++;					// incrementa o ponteiro, fzendo com que leia a proxima letra
-	UART_send_byte(*tMessagePtr);	//desreferencia a proxima letra 
+	UART_send_byte(*tMessagePtr);
 	}
+	UART_send_byte('\n');	//desreferencia a proxima letra 
 	}
 
 int main(void){
