@@ -11,6 +11,6 @@
 
 
 void SPI_master_config();
-uint8_t SPI_transceive(uint8_t pTxByte
+uint8_t SPI_transceive(uint8_t pTxByte);
 
 #endif /* SPI_H_ */
