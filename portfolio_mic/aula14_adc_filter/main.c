@@ -8,19 +8,30 @@
 #include <xc.h>
 #include "avr/interrupt.h"
 
+uint16_t x[4];												//medidas do ADC
+
 ISR(TIMER1_COMPB_vect){
-	PORTB ^= (1<<PORTB1);									//Para visualizar o tempo
+	//PORTB ^= (1<<PORTB1);									//Para visualizar o tempo
 }
 
 
 ISR(ADC_vect){												//Interrupção referente a conversão concluida
+	PORTB |= (1<<PORTB1);
 	uint16_t tADCData = ADC;
-	if(tADCData < 670) {
-		PORTB ^= (1<<PORTB0);
-	}	else{
+		//Filtro media movel de ordem 4
+		x[3] = x[2];										//Linha de atraso do sinal x (fila FIFO)
+		x[2] = x[1];
+		x[1] = x[0];
+		x[0] = tADCData;
+			uint16_t y = (x[0] +x[1] + x[2] +x[3]) / 4;		//Filtro media movel de ordem 4
+
+	if (y < 670) {
+		PORTB |=  (1<<PORTB0);								//
+	}else{
 				PORTB &= ~(1<<PORTB0);
-			}
+			PORTB |= (1<<PORTB0);
 		}
+	}
 
 void ADC_config(){
 	ADMUX = (0<<MUX3)|(0<<MUX2)|(0<<MUX1)|(0<<MUX0)			//Canal de conversão: pino ADC0
